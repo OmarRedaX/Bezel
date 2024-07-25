@@ -1,0 +1,609 @@
+/* header */
+*{
+    font-family: "Poppins", sans-serif ;
+}
+
+*::selection{
+    background-color: black;
+    color: white;
+}
+
+.b-img1{
+    background-image:linear-gradient(rgba(54, 54, 54, 0.397),rgba(54, 54, 54, 0.397)), url(../images/bg-image-28.jpg);
+    background-size: cover;
+}
+
+.b-img2{
+    background-image:linear-gradient(rgba(54, 54, 54, 0.397),rgba(54, 54, 54, 0.397)), url(../images/bg-image-29.jpg);
+}
+
+.problem{
+    padding: 350px;
+}
+
+.animation{
+
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    padding: 50px 0;
+    color: white;
+    animation-name: popout;
+    transform: scale(1.5)
+
+}
+
+.animation-h1{
+
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    font-weight: 700;
+    font-size: 40px !important;
+    line-height: 125px;
+    color: white;
+    animation-name: popout;
+    animation-duration: 1s;
+    transform: scale(1.5)
+
+}
+
+.animation-p{
+
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    color: white;
+    font-size: 70px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 23px;
+    animation-name: popout;
+    animation-duration: 4s;
+    transform: scale(1.5)
+
+}
+
+.animation-btn{
+
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    color: white;
+    animation-name: popout-btn;
+    animation-duration: 6s;
+    transform: scale(1)
+
+}
+
+.animation-h1-2{
+
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80px;
+    color: white;
+    animation-name: popout;
+    animation-duration: 1s;
+    transform: scale(1.5)
+
+}
+
+.animation-p-2{
+
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    color: white;
+    font-size: 70px;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 23px;
+    animation-name: popout;
+    animation-duration: 4s;
+    transform: scale(1.5)
+}
+
+.animation-btn-2{
+
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    color: white;
+    animation-name: popout-btn-2;
+    animation-duration: 6s;
+    transform: scale(0.65)
+
+}
+
+
+@keyframes popout{
+    0% {opacity: 0; transform: scale(1);}
+    100% {opacity: 1; transform: scale(1.5);}
+}
+
+@keyframes popout-btn{
+    0% {opacity: 0; transform: scale(0.5);}
+    100% {opacity: 1; transform: scale(1);}
+}
+
+@keyframes popout-btn-2{
+    0% {opacity: 0; transform: scale(0.4);}
+    100% {opacity: 1; transform: scale(0.65);}
+}
+
+.arrow1{
+    top: 48%;
+    left: 1%;
+}
+
+.arrow2{
+    top: 53.59%;
+    left: 1%;
+}
+
+/* nabar */
+nav{
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.w-45{
+    width: 45%;
+}
+
+
+
+.w-61{
+    width: 61%;
+}
+
+nav .size-font{
+    font-size: small;
+}
+
+nav .icons{
+    padding: 0 12px !important;
+}
+
+nav ul li a{
+    font-weight:500 !important;
+    font-size:13px !important;
+    transition:all 0.5s !important;
+}
+
+nav ul li a:hover{
+    color: rgba(138, 138, 138, 0.705) !important;
+}
+
+nav .container::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.164);
+    width: 1px;
+    height: 133%;
+    position: absolute;
+    left: 1175px;
+}
+
+
+
+/* about */
+.section1 h6{
+    font-size:11px;
+    font-weight: 500;
+    line-height: 17px;
+    margin-bottom:20px ;
+}
+
+.section1 button{
+    font-size: 11px;
+    font-weight: 500;
+    border-color:rgba(0, 0, 0, 0.151) !important;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.section1{
+    border-color: rgba(0, 0, 0, 0.151);
+    padding-bottom: 80px;
+}
+
+
+
+/* creative team */
+.section2{
+    padding: 110px 0;
+}
+
+.section2 h2{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49px;
+    position: relative;
+}
+
+.section2  h2::after{
+    content: "c";
+    position: absolute;
+    opacity: 6%;
+    font-size: 100px;
+    left: 48.7%;
+    transform: translateX(50%);
+    transform: translateY(-50%);
+}
+
+.section2 h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(120, 120, 120);
+    line-height:23px;
+}
+
+
+
+.item-blue{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #18c9ddce;
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateY(10%);
+}
+
+.section2 .parent:hover .item-blue{
+    opacity:1;
+    transform: translateY(0);
+}
+
+.section2 .size-blue{
+    font-size: 13px;
+    color: white;
+}
+
+.section2 .words h6{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 17px;
+    color: white;
+}
+
+.section2 .words p{
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+
+/* What We Do */
+.section3{
+    background-color:#626262 ;
+}
+
+.section3 .one{
+    padding-top: 180px;
+}
+
+.section3 .one ul{
+    column-gap: 110px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.section3 .col-lg-5 .first h2::after{
+    content: "W";
+    position: absolute;
+    opacity: 6%;
+    font-size: 70px;
+    left: 19.5%;
+    transform: translateX(50%);
+    transform: translateY(-50%);
+
+}
+
+.section3 .size-size{
+    font-size: 15px ;
+    font-weight: 400;
+}
+
+
+
+/* Cheap Prices */
+.section4{
+    background-color:#F7F7F7 ;
+    padding: 120px 0;
+}
+
+.section4 h2{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49px;
+    position: relative;
+}
+
+.section4 > h2::after{
+    content: "c";
+    position: absolute;
+    opacity: 6%;
+    font-size: 100px;
+    left: 48.7%;
+    transform: translateX(50%);
+    transform: translateY(-50%);
+}
+
+.section4 h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(120, 120, 120);
+    line-height:23px;
+}
+
+.section4 ul li span {
+    font-size: 15px;
+    font-weight: 400;
+    color:rgb(120, 120, 120);
+}
+
+.section4 button{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.section4 .border-bottom p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.section4 .border-bottom h2{
+    font-size:55px ;
+    font-weight: 500;
+    padding-left: 10px ;
+}
+
+.section4 .border-bottom h2 span{
+    font-size: 18px;
+    font-weight: 400;
+    top: -20px;
+    left: 0;
+}
+
+.section4 .best-value{
+    font-size: 9px;
+    font-weight: 500;
+    right: 30px;
+    top: 52px;
+    padding: 8px 15px;
+}
+
+.section4 .parent{
+    transition: all 0.4s;
+}
+
+.section4 .parent:hover{
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.178) !important;
+}
+
+/* section5 */
+
+.section5 {
+    background-color:#F7F7F7 ;
+    padding:110px 0;
+}
+
+.section5 .main-customer h6{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.section5 img {
+    width: 100px;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+
+.section5 h3{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.section5 h6{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgb(120, 120, 120);
+}
+
+.section5 p{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 27px;
+    color: rgb(120, 120, 120);
+}
+
+.section5 .carousel-indicators{
+
+    margin-bottom: -30px;
+    
+}
+
+.section5 .carousel-indicators [data-bs-target] {
+    
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color:#00C3DA;
+
+}
+
+/* section 6 */
+
+.section6 h2{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 49px;
+}
+
+.section6 h2::after{
+    content: "G";
+    position: absolute;
+    opacity: 6%;
+    font-size: 70px;
+    left: 0;
+    transform: translateX(45%);
+    transform: translateY(-40%);
+}
+
+.section6 .form {
+    padding-top: 120px;
+}
+
+form{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.section6 button{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+textarea{
+    width: 100%;
+}
+
+
+input:focus{
+    border: 0.5px solid rgb(0, 0, 0) !important;
+    outline: 1px solid rgb(0, 0, 0) !important;
+}
+
+
+
+
+
+@media (max-width:1800px){
+
+}
+
+@media (max-width:1400px){
+    nav .container::after{
+        content: "";
+        width: 1px;
+        height: 133%;
+        position: absolute;
+        left: 995px;
+    }
+
+    .section3 .w-md-95{
+        width: 95%;
+    }
+}
+
+@media (max-width:1200px){
+    nav .container::after{
+        content: "";
+        width: 1px;
+        height: 133%;
+        position: absolute;
+        left: 813px;
+    }
+
+    .section3 .w-md-95{
+        width: 95%;
+    }
+    
+    .section4 .w-md-95{
+        width: 95%;
+    }
+
+    
+}
+
+@media (min-width:1000px) {
+    .w-39{
+        width: 39%;
+    }
+}
+
+@media (max-width:991px){
+    nav .container::after{
+        content: "";
+        width: 1px;
+        height: 133%;
+        position: absolute;
+        left: 620px;
+    }
+
+    .section3 .w-md-95{
+        width: 95%;
+    }
+   
+   
+}
+
+@media (max-width:767px){
+    nav .container::after{
+        content: "";
+        width: 1px;
+        height: 133%;
+        position: absolute;
+        left: 460px;
+    }
+
+    .section2 .w-md-95{
+        width: 95%;
+    }
+
+    header .animation-h1{
+        font-size: 20px;
+    }
+
+    header .animation-p{
+        font-size: 6px;
+        
+    }
+
+    .problem{
+        padding: 250px;
+    }
+
+    header .animation-h1-2{
+        font-size: 15px;
+    
+    }
+
+    header .animation-p-2{
+        font-size: 6px;
+        
+    }
+
+    header .animation-h1 {
+        font-size: 18px !important;
+    }
+
+    header .animation-p {
+        font-size: 6px !important;
+    }
+
+    header .animation-btn{
+        padding: 3px 7px;
+    }
+
+    .section5 h3{
+       padding-top: 36px;
+    }
+}
+
+@media (max-width:531px){
+    nav .container::after{
+        content: "";
+        width: 1px;
+        height: 133%;
+        position: absolute;
+        left: 410px;
+    }
+
+    .mt-xs-4{
+        margin-top: 20px;
+    }
+
+    .section5 .w-md-95{
+        width: 95%;
+    }
+}
+
+
+
